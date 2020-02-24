@@ -11,4 +11,14 @@ class MsgController extends Controller
         Message::success($msg, $title);
         return view('welcome');
     }
+
+    public function create()
+    {
+        return view('message.create');
+    }
+
+    public function post()
+    {
+        return 'post';
+    }
 }
