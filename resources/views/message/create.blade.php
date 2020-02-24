@@ -37,7 +37,7 @@
           <option value="info">Info</option>
           <option value="question">Question</option>
           <option value="warning">Warning</option>
-          <option value="danger">Danger</option>
+          <option value="error">Error</option>
         </select>
       </div>
     </div>
