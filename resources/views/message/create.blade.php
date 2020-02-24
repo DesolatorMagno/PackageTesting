@@ -43,6 +43,8 @@
     </div>
     <div class="form-group row">
       <div class="offset-4 col-8">
+
+        <a href="{{ route('home')}}" class="btn btn-info">Back</a>
         <button name="submit" type="submit" class="btn btn-primary">Enviar</button>
       </div>
     </div>
