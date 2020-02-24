@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use DesolatorMagno\LaravelMsg\Message;
+use Illuminate\Http\Request;
 
 class MsgController extends Controller
 {
@@ -17,8 +18,9 @@ class MsgController extends Controller
         return view('message.create');
     }
 
-    public function post()
+    public function post(Request $request)
     {
-        return 'post';
+        Message::{$request->tipo}($request->get('titulo', ''), $request->mensaje);
+        return view('message.create');
     }
 }
