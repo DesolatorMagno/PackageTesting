@@ -20,3 +20,6 @@ Route::get('/test', function () {
 });
 
 route::get('/success/{msg?}/{title?}', 'MsgController@success')->name('alert.success');
+
+route::get('/message/create', 'MsgController@create')->name('msg.create');
+route::post('/message', 'MsgController@post')->name('msg.post');
