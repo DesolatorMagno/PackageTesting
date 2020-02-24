@@ -20,7 +20,7 @@ class MsgController extends Controller
 
     public function post(Request $request)
     {
-        Message::{$request->tipo}($request->get('titulo', ''), $request->mensaje);
-        return view('message.create');
+        Message::{$request->tipo}($request->mensaje, $request->titulo ?? null);
+        return redirect()->route('msg.create');
     }
 }
