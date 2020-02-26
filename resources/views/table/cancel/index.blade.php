@@ -12,45 +12,21 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-            <td>
-                <form action="{{ route('table.cancel.destroy', ['id' => 1]) }}" method="POST">
-                    @csrf
-                    @method('delete')
-                    <button type="submit" class="btn btn-danger submit-alert">Delete</button>
-                </form>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-            <td>
-                <form action="{{ route('table.cancel.destroy', ['id' => 3]) }}" method="POST">
-                    @csrf
-                    @method('delete')
-                    <button type="submit" class="btn btn-danger submit-alert">Delete</button>
-                </form>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
-            <td>
-                <form action="{{ route('table.cancel.destroy', ['id' => 5]) }}" method="POST">
-                    @csrf
-                    @method('delete')
-                    <button type="submit" class="btn btn-danger submit-alert">Delete</button>
-                </form>
-            </td>
-          </tr>
+            @foreach ($users as $user)
+            <tr>
+                <th scope="row">{{ $user->id }}</th>
+                <td>{{ $user->name }}</td>
+                <td>{{ $user->last }}</td>
+                <td>{{ $user->twitter }}</td>
+                <td>
+                    <form action="{{ route('table.cancel.destroy', ['id' => $user->id ]) }}" method="POST">
+                        @csrf
+                        @method('delete')
+                        <button type="submit" class="btn btn-danger submit-alert">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            @endforeach
         </tbody>
       </table>
 </div>
