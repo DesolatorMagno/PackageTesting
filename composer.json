@@ -9,6 +9,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.2",
+        "desolatormagno/js-utilities": "^0.0.1@dev",
         "desolatormagno/laravel-msg": "dev-master",
         "fideloper/proxy": "^4.0",
         "laravel/framework": "^6.2",

@@ -4,8 +4,63 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb6da2f576e23f4907bf167bb36912b0",
+    "content-hash": "fc4d094c2123780eb4c7adf6ecf50cf3",
     "packages": [
+        {
+            "name": "desolatormagno/js-utilities",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/DesolatorMagno/JsUtilities.git",
+                "reference": "e91fb6739c8d0daef5da1909d296eb33a8e579a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/DesolatorMagno/JsUtilities/zipball/e91fb6739c8d0daef5da1909d296eb33a8e579a5",
+                "reference": "e91fb6739c8d0daef5da1909d296eb33a8e579a5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.0.1-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "DesolatorMagno\\JsUtilities\\JsUtilitiesServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "DesolatorMagno\\JsUtilities\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Reny Ramos",
+                    "email": "renyramosgarcia@gmail.com",
+                    "homepage": "https://github.com/DesolatorMagno",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Set of js utilities for tables and views in general.",
+            "homepage": "https://github.com/desolatormagno/js-utilities",
+            "keywords": [
+                "JS",
+                "crud",
+                "desolatormagno",
+                "js-utilities"
+            ],
+            "time": "2020-02-26T03:19:58+00:00"
+        },
         {
             "name": "desolatormagno/laravel-msg",
             "version": "dev-master",
@@ -5036,6 +5091,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "desolatormagno/js-utilities": 20,
         "desolatormagno/laravel-msg": 20
     },
     "prefer-stable": true,
