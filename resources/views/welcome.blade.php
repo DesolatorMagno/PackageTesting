@@ -94,6 +94,7 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
 
+                    <a href="{{ route('table.cancel.index') }}">Tablas</a>
                     <a href="{{ route('msg.create') }}">Mensajes</a>
                 </div>
             </div>
