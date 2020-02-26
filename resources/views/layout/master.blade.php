@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
 
 
         <!-- Styles -->
@@ -64,6 +65,10 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .swal2-popup {
+                font-size: 0.8rem !important;
+            }
         </style>
     </head>
     <body>
@@ -82,7 +87,7 @@
                 </div>
             @endif
 
-        <div class="content">
+        <div class="content col-8">
             @yield('content')
         </div>
         @stack('script')
