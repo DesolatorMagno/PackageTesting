@@ -30,9 +30,10 @@
         </tbody>
       </table>
 </div>
+<a href="{{ route('home')}}" class="btn btn-info btn-lg">Back</a>
 @endsection
 @push('script')
-@include('js-utilities::submit-alert', ['msgTitle' => 'Eliminar usuario?'])
+@include('js-utilities::form.click-alert', ['msgTitle' => 'Eliminar usuario?'])
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
 <script>
   /*
