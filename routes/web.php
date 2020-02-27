@@ -26,3 +26,6 @@ route::post('/message', 'MsgController@post')->name('msg.post');
 
 route::get('/table-cancel', 'TableCancelController@index')->name('table.cancel.index');
 route::delete('/table-cancel/{id}', 'TableCancelController@destroy')->name('table.cancel.destroy');
+
+route::get('/table-del', 'TableDeleteRowController@index')->name('table.del.index');
+route::delete('/table-del/{id}', 'TableDeleteRowController@destroy')->name('table.del.destroy');
