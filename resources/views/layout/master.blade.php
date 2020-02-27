@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
 
         <title>Laravel</title>
 
@@ -90,6 +91,7 @@
         <div class="content col-8">
             @yield('content')
         </div>
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript "></script>
         @stack('script')
         @include('laravel-msg::msg')
     </body>
