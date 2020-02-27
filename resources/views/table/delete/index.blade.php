@@ -29,7 +29,6 @@
             @endforeach
         </tbody>
       </table>
-      <span>España</span>
 </div>
 <a href="{{ route('home')}}" class="btn btn-info btn-lg">Back</a>
 @endsection
